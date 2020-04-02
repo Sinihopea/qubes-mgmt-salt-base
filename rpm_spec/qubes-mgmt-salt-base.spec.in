@@ -1,20 +1,19 @@
 
-Name:      qubes-mgmt-salt-base
-Version:   @VERSION@
-Release:   1%{?dist}
-Summary:   Custom base modules and states that are shared between dom0 and VM.
-License:   GPL 2.0
-URL:	   http://www.qubes-os.org/
+Name:           qubes-mgmt-salt-base
+Version:        @VERSION@
+Release:        1%{?dist}
+Summary:        Custom base modules and states that are shared between dom0 and VM.
+License:        GPL 2.0
+URL:            http://www.qubes-os.org/
 
-Group:     System administration tools
-BuildArch: noarch
-Requires:  qubes-mgmt-salt-config
-Requires:  qubes-mgmt-salt-base-topd
-Requires:  qubes-mgmt-salt-base-config
+Group:          System administration tools
+BuildArch:      noarch
+Requires:       qubes-mgmt-salt-config
+Requires:       qubes-mgmt-salt-base-topd
+Requires:       qubes-mgmt-salt-base-config
 Requires(post): /usr/bin/qubesctl
 
-
-Source0: %{name}-%{version}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
 
 %description
 Custom base modules and states that are shared between dom0 and VM.
